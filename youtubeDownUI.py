@@ -4,7 +4,7 @@ Descripcion: Programa para poder descargar videos de youtube que necesito en mi 
              para no tener que depender de páginas de internet, que me descarguen los videos con riesgo de que me inserten algun virus o algo peor, y a la vez me sirva para practicar
              python y el uso de la libreria Pytube. 
              Aparte con esto sigo practicando librerias como la de tkinter, la de pillow, etc...
-             Está es la versión 1.1 porque la versión 1.0 era sin entorno gráfico, es decir por consola. 
+             Está es la versión 1.1 porque la versión 1.0 era sin entorno gráfico, es decir por consola. subido a git
              
 Autor: Tomás Rodríguez Garrido 
 Version: 1.1
@@ -63,7 +63,7 @@ class YT(Frame):
         self.nota = Label(text= note, fg='red', bg= '#e2e2e2', font=('Helvetica', 12, 'bold'))
         self.nota.place(relx=0.5, rely=0.92, anchor='center')
         
-        self.iBoton = PhotoImage(file ='C:\\Users\\Usuario\\Desktop\\Python - Programas\\YouTubeDown\\boton2.png')
+        self.iBoton = PhotoImage(file ='boton2.png')
         self.boton = Button(image= self.iBoton, bg='#e2e2e2', highlightbackground= '#e2e2e2', highlightthickness= 2, borderwidth= 0, command= descarga)
         self.boton.grid(column=2,row=0, pady=3, padx=20)
         
@@ -79,10 +79,10 @@ if __name__ == "__main__":
     ventana.config(bg= '#e2e2e2')
     ventana.minsize(height= 450,width=900)   
     ventana.resizable(0,0) 
-    ventana.call('wm', 'iconphoto', ventana._w, ImageTk.PhotoImage(Image.open('C:\\Users\\Usuario\\Desktop\\Python - Programas\\YouTubeDown\\descargar.png')))
+    ventana.call('wm', 'iconphoto', ventana._w, ImageTk.PhotoImage(Image.open('descargar.png')))
     ventana.geometry('900x450')
     
-    fondo = PhotoImage(file ='C:\\Users\\Usuario\\Desktop\\Python - Programas\\YouTubeDown\\fondo.png')
+    fondo = PhotoImage(file ='fondo.png')
     background = Label(image=fondo, bg='#e2e2e2')
     background.place(x=0.5, y=0.5, relwidth=1, relheight=1.25)
     
